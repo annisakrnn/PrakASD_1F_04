@@ -23,8 +23,7 @@ public class Pemilihan_04 {
 
         if (!((tugas >= 0 && tugas <= 100) && (kuis >= 0 && kuis <= 100) && (uts >= 0 && uts <= 100) && (uas >= 0 && uas <= 100))) {
             System.out.println("nilai tidak valid");;
-        }else {
-            double nilaiAkhir = (tugas * 0.4F) + (kuis * 0.3F) + (uts * 0.1F) + (uas * 0.2F);
+        }else {double nilaiAkhir = (tugas * 0.4F) + (kuis * 0.3F) + (uts * 0.1F) + (uas * 0.2F);
 
         System.out.println("==============================");
         System.out.println("==============================");
