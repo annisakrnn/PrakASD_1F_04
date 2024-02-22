@@ -70,7 +70,7 @@ public class Array_04 {
         double ip = nsks / totalSks;
 
         System.out.println();
-        System.out.println("                                      HASIL KONVERSI NILAI                                     ");
+        System.out.println("                                      hasil KONVERSI NILAI                                     ");
         System.out.println("===============================================================================================");
         System.out.println("|   Mata Kuliah                           |   Nilai Angka  |   Nilai Huruf   |   Nilai Setara |");
         System.out.println("===============================================================================================");

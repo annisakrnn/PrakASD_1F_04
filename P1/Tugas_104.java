@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Tugas_104 {
     public static void main(String[] args) {
       
@@ -21,10 +20,7 @@ public class Tugas_104 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Masukkan kode plat nomor: ");
         char kodePlat = scanner.next().charAt(0);
-        
-        
         String namaKota = cariKota(KODE, KOTA, kodePlat);
-        
         
         if (namaKota != null) {
             System.out.println("Kota yang berpasangan dengan kode plat nomor " + kodePlat + " adalah: " + namaKota);
@@ -33,7 +29,6 @@ public class Tugas_104 {
         }
     }
 
-    
     public static String cariKota(char[] KODE, String[][] KOTA, char kodePlat) {
         for (int i = 0; i < KODE.length; i++) {
             if (KODE[i] == kodePlat) {
