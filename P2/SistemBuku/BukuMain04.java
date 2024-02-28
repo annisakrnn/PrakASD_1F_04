@@ -17,5 +17,9 @@ public class BukuMain04 {
         Buku04 bk2 = new Buku04("Self Reward", "Maheera Ayesha", 160, 29, 59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+
+        Buku04 Annisa = new Buku04("Mariposa", "Luluk HF", 230, 12, 980000);
+        Annisa.terjual(7);
+        Annisa.tampilInformasi();
     }
 }
