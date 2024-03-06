@@ -5,6 +5,8 @@ public class Mahasiswa04 {
     String nim;
     String jenisKelamin;
     double ipk;
+    double totalIPk;
+    double maxIPK;
 
     public Mahasiswa04(String nama, String nim, String jenisKelamin, double ipk) {
         this.nama = nama;
