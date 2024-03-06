@@ -1,11 +1,15 @@
 {
     "java.project.sourcePaths": [
         "src",
+        "P2",
         "P1",
-        "P2"
+        "P3"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
+    ],
+    "cSpell.words": [
+        "Persegipanjang"
     ]
 }
