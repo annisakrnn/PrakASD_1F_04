@@ -1,9 +1,11 @@
 {
     "java.project.sourcePaths": [
         "src",
+        "P4",
+        "P3",
         "P2",
         "P1",
-        "P3"
+        "P5/Faktorial"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
