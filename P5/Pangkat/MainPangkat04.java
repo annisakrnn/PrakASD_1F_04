@@ -9,11 +9,11 @@ public class MainPangkat04 {
 
         Pangkat04[] png = new Pangkat04[elemen];
         for (int i = 0; i < elemen; i++) {
-            png[i] = new Pangkat04();
             System.out.print("Masukkan nilai yang akan dipangkatkan: ");
-            png[i].nilai = sc.nextInt();
+            int nilai = sc.nextInt();
             System.out.print("Masukkan nilai pemangkat: ");
-            png[i].pangkat = sc.nextInt();
+            int pangkat = sc.nextInt();
+            png[i] = new Pangkat04(nilai, pangkat);
         }
         
         System.out.println("HASIL PANGKAT - BRUTE FORCE");
@@ -25,9 +25,9 @@ public class MainPangkat04 {
         }
         System.out.println("HASIL PANGKAT - DIVIDE AND CONQUER");
         for (int i = 0; i < elemen; i++) {
-            System.out.println("Hasil dari " 
-            + png[i].nilai + " pangkat " 
-            + png[i].pangkat + " adalah " 
+            System.out.println("Hasil dari "
+            + png[i].nilai + " pangkat "
+            + png[i].pangkat + " adalah "
             + png[i].pangkatDC(png[i].nilai, png[i].pangkat));
         }
     }
