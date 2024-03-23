@@ -10,7 +10,7 @@ public class MainFaktorial04 {
         int iJml = sc.nextInt();
 
         Faktorial04[] fk = new Faktorial04[10];
-        for(int i=0; i < iJml; i++){
+        for(int i=0; i < iJml;i++){
             fk[i] = new Faktorial04();
             System.out.println("masukkan nilai ke-" +(i+1)+":");
             fk[i].nilai= sc.nextInt();
