@@ -1,32 +1,19 @@
 public class Sum04 {
+    String nama;
     int elemen;
-    double keuntungan[], total;
+    double[] keuntungan;
 
-    Sum04(int elemen){
+    public Sum04(String nama, int elemen) {
+        this.nama = nama;
         this.elemen = elemen;
-        this.keuntungan = new double[elemen];
-        this.total = total;
-
-        this.keuntungan = keuntungan;
+        keuntungan = new double[elemen];
     }
 
-    double totalBF(double arr[]){
+    public double hitungTotalKeuntungan() {
         double total = 0;
-        for(int i=0; i < arr.length; i++){
-            total = total + arr[i];
+        for (double k : keuntungan) {
+            total += k;
         }
         return total;
-    }
-
-    double totalDC(double arr[], int l, int r){
-        if(l == r){
-            return arr[l];
-        } else if(l < r){
-            int mid = (l + r) / 2;
-            double lsum = totalDC(arr, l, mid - 1);
-            double rsum = totalDC(arr, mid + 1, r);
-            return lsum + rsum + arr[mid];
-        }
-        return 0;
     }
 }
