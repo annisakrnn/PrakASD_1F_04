@@ -1,13 +1,14 @@
 {
     "java.project.sourcePaths": [
         "src",
+        "P5/SumArray",
         "P5/Pangkat",
         "P5/Faktorial",
         "P4",
         "P3",
         "P2",
         "P1",
-        "P5/SumArray"
+        "P5/LatihanPraktikum"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
