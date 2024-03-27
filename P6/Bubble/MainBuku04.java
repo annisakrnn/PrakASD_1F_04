@@ -21,6 +21,11 @@ public class MainBuku04{
         System.out.println("Data setelah sorting Asc berdasarkan stock");
         listBk.bubbleSort();
         listBk.tampil();
+
+        System.out.println("*********************************");
+        System.out.println("Data setelah diurutkan secara Desc berdasarkan stock Menggunakan selection short");
+        listBk.selectionSort();
+        listBk.tampil();;
         
     }
 }
