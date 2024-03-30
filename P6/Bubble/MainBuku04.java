@@ -25,6 +25,11 @@ public class MainBuku04{
         System.out.println("*********************************");
         System.out.println("Data setelah diurutkan secara Desc berdasarkan stock Menggunakan selection short");
         listBk.selectionSort();
+        listBk.tampil();
+
+        System.out.println("*********************************");
+        System.out.println("Data setelah diurutkan secara Des berdasarkan stock Menggunakan inshertion short");
+        listBk.insertSort();
         listBk.tampil();;
         
     }

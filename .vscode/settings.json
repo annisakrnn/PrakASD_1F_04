@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "src",
+        "P6/Bubble",
         "P5/SumArray",
         "P5/Pangkat",
         "P5/LatihanPraktikum",
@@ -9,7 +10,7 @@
         "P3",
         "P2",
         "P1",
-        "P6/Bubble"
+        "P6/LatihanPraktikum"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
