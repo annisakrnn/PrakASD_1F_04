@@ -1,17 +1,16 @@
 {
     "java.project.sourcePaths": [
-        "src",
+        "P7/TestSeearching",
         "P6/LatihanPraktikum",
         "P6/Bubble",
         "P5/SumArray",
         "P5/Pangkat",
         "P5/LatihanPraktikum",
         "P5/Faktorial",
-        "P4",
         "P3",
         "P2",
         "P1",
-        "P7/TestSeearching"
+        "Kuis1_1F_04"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
