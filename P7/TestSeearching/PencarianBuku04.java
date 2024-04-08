@@ -17,22 +17,22 @@ public class PencarianBuku04 {
         }
     }
 
-    public int FindSeqSearch(int cari) {
-        int posisi = -1;
-        for (int j = 0; j < listbk.length; j++) {
-            if (listbk[j].kodeBuku == cari) {
-                posisi = 0; // Perbarui nilai posisi jika data ditemukan
+    public buku04 FindBuku(int cari){
+        buku04 posisi = null;
+        for(int j=0; j < listbk.length; j++){
+            if(listbk[j].kodeBuku == cari){
+                posisi = listbk[j];
                 break;
             }
         }
-        return posisi; // Kembalikan nilai posisi
+        return posisi;
     }
 
-    public void tampilposisi(int x, int pos) { // Ganti pod menjadi pos
-        if (pos != -1) {
-            System.out.println("Data: " + x + " ditemukan pada indeks " + pos);
+    public void tampilDataBuku(buku04 buku) { // Ganti pod menjadi pos
+        if (buku != null) {
+            buku.tampilDataBuku();
         } else {
-            System.out.println("Data " + x + " tidak ditemukan");
+            System.out.println("Data tidak ditemukan");
         }
     }
 }

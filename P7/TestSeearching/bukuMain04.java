@@ -36,10 +36,9 @@ public class bukuMain04 {
         System.out.println("Masukkan Kode Buku yang dicari");
         System.out.print("Kode Buku : ");
         int cari = s.nextInt();
-        System.out.println("menggunakan sequential Search");
-        int posisi = data.FindSeqSearch(cari);
-        data.tampilposisi(cari, posisi);
-
+        System.out.println("menggunakan findBuku Search");
+        buku04 databuku = data.FindBuku(cari);
+        databuku.tampilDataBuku();
 
     }
 }
