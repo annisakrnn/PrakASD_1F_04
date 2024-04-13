@@ -10,7 +10,8 @@
         "P3",
         "P2",
         "P1",
-        "Kuis1_1F_04"
+        "Kuis1_1F_04",
+        "P7/MergeSorting"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
