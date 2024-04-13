@@ -12,7 +12,7 @@ public class bukuMain04 {
         for(int i = 0; i < jumBuku; i++) {
             System.out.println("====================");
             System.out.print("Kode Buku \t : ");
-            String kodeBuku = s.nextLine(); // Ubah ke s.nextLine() agar kode buku bisa dimasukkan
+            String kodeBuku = s.nextLine(); 
             System.out.print("Judul Buku \t : ");
             String judulBuku = s.nextLine();
             System.out.print("Tahun Terbit \t : ");
@@ -22,8 +22,7 @@ public class bukuMain04 {
             String pengarang = s.nextLine();
             System.out.print("Stock \t : ");
             int stock = s.nextInt();
-            s.nextLine(); // Menambahkan s.nextLine() untuk membersihkan buffer
-            // buku04 m = new buku04(kodeBuku, judulBuku, tahunTerbit, pengarang, stock); // Menggunakan konstruktor buku04 yang sesuai
+            s.nextLine(); 
             buku04 m = new buku04(kodeBuku, judulBuku, tahunTerbit, pengarang, stock);
             data.tambah(m);
         }
@@ -34,15 +33,15 @@ public class bukuMain04 {
         System.out.println("Pencarian Judul Buku : ");
         System.out.println("Masukkan Judul Buku yang dicari");
         System.out.print("Judul Buku : ");
-        String cariJudul = s.nextLine(); // Ubah cari menjadi cariJudul agar sesuai dengan variabel yang digunakan
+        String cariJudul = s.nextLine(); 
         System.out.println("menggunakan sequential search");
-        int countSeq = data.FindSeqSearch(cariJudul); // Menggunakan variabel cariJudul untuk pencarian
+        int countSeq = data.FindSeqSearch(cariJudul); 
         System.out.println("Jumlah buku dengan judul : " + cariJudul + "\" adalah: " + countSeq);
         
         
         System.out.println("---------------------------");
         System.out.println("menggunakan binary search");
-        int countBinary = data.FindBinarySearch(cariJudul); // Menggunakan variabel cariJudul untuk pencarian
+        int countBinary = data.FindBinarySearch(cariJudul); 
         System.out.println("Jumlah buku dengan judul \"" + cariJudul+ "\" adalah: " + countBinary); 
     }
 

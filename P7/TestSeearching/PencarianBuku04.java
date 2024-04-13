@@ -12,8 +12,8 @@ public class PencarianBuku04 {
     }
 
     public void tampil() {
-        for (int i = 0; i < idx; i++) { // Menggunakan idx sebagai batas iterasi agar tidak menampilkan elemen null
-            listbk[i].tampilDataBuku(); // Menampilkan data buku menggunakan metode tampilDataBuku()
+        for (int i = 0; i < idx; i++) { 
+            listbk[i].tampilDataBuku(); 
         }
     }
 
@@ -21,12 +21,12 @@ public class PencarianBuku04 {
         for (int i = 0; i < idx - 1; i++) {
             int minIdx = i;
             for (int j = i + 1; j < idx; j++) {
-                // Perbaikan penulisan listbk[minIdx].judulBuku
+                
                 if (listbk[j].judulBuku.compareToIgnoreCase(listbk[minIdx].judulBuku) < 0) {
                     minIdx = j;
                 }
             }
-            // Memindahkan perintah penempatan ke dalam loop selectionSort
+           
             buku04 temp = listbk[minIdx];
             listbk[minIdx] = listbk[i];
             listbk[i] = temp;
@@ -35,8 +35,8 @@ public class PencarianBuku04 {
 
     public int FindSeqSearch(String judul) {
         int count = -1;
-        for (int j = 0; j < idx; j++) { // Menggunakan idx sebagai batas iterasi
-            if (listbk[j].judulBuku.equalsIgnoreCase(judul)) { // Menggunakan equalsIgnoreCase() untuk pencarian
+        for (int j = 0; j < idx; j++) { 
+            if (listbk[j].judulBuku.equalsIgnoreCase(judul)) { 
                 count = j;
                 break;
             }
@@ -45,7 +45,7 @@ public class PencarianBuku04 {
     }
 
     public int FindBinarySearch(String judul) {
-        selectionSort(); // Memanggil selectionSort sebelum pencarian
+        selectionSort(); 
 
         int left = 0;
         int right = idx - 1;
