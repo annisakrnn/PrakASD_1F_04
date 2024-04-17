@@ -1,3 +1,5 @@
+
+
 public class gudang04 {
     barang04[] tumpukan;
     int size;
@@ -38,6 +40,7 @@ public void tambahBarang(barang04 brg){
             barang04 delete = tumpukan[top];
             top--;
             System.out.println("Barang " + delete.nama + " diambil dari Gudang.");
+            System.out.println("Kode unik dalam biner: " + konversiDesimalKeBiner(delete.kode));
             return delete;
         }else{
             System.out.println("Tumpukan barang kosong.");
@@ -64,5 +67,18 @@ public void tambahBarang(barang04 brg){
     } else {
         System.out.println("Tumpukan barang kosong.");
     }
+}
+public String konversiDesimalKeBiner(int kode){
+    StackKonversi04 stack = new StackKonversi04();
+    while (kode > 0) {
+        int sisa = kode % 2;
+        stack.push(sisa);
+        kode = kode / 2;
+    }
+    String biner = new String();
+    while(!stack.isEmpty()){
+        biner += stack.pop();
+    }
+    return biner;
 }
 }
