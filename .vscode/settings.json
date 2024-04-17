@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "P7/TestSeearching",
+        "P7/MergeSorting",
         "P6/LatihanPraktikum",
         "P6/Bubble",
         "P5/SumArray",
@@ -11,7 +12,7 @@
         "P2",
         "P1",
         "Kuis1_1F_04",
-        "P7/MergeSorting"
+        "P8"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
