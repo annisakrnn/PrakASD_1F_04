@@ -26,7 +26,6 @@ public class PencarianBuku04 {
                     minIdx = j;
                 }
             }
-           
             buku04 temp = listbk[minIdx];
             listbk[minIdx] = listbk[i];
             listbk[i] = temp;
