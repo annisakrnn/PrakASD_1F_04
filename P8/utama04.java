@@ -35,8 +35,7 @@ public class utama04 {
                     gudang.tampilkanBarang();
                     break;
                 case 4:
-                    System.out.println("Terima kasih!");
-                    System.exit(0);
+                    break;
                 default:
                     System.out.println("Pilihan tidak valid. Silahkan coba lagi.");
             }
