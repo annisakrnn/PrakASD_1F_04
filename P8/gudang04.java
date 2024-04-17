@@ -57,6 +57,24 @@ public void tambahBarang(barang04 brg){
             return null;
         }
     }
+    public barang04 lihatBarangTerbawah(){
+        if(!cekPenuh()){
+            barang04 barangTerbawah = tumpukan[0];
+            System.out.println("Barang terbawah " + barangTerbawah.nama);
+            return barangTerbawah;
+        }else{
+            System.out.println("Tumpukan barang kosong.");
+            return null;
+        }
+    }
+    public barang04 cariBarang(String nama) {
+        for (barang04 brg : tumpukan) {
+            if (brg != null && brg.nama.equals(nama)) {
+                return brg;
+            }
+        }
+        return null;
+    }
     public void tampilkanBarang(){
         if(!cekKosong()){
             System.out.println("Rincian tumpukan barang di gudang:");
