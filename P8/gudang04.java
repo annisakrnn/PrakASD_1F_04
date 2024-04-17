@@ -70,7 +70,7 @@ public void tambahBarang(barang04 brg){
 }
 public String konversiDesimalKeBiner(int kode){
     StackKonversi04 stack = new StackKonversi04();
-    while (kode > 0) {
+    while (kode != 0) {
         int sisa = kode % 2;
         stack.push(sisa);
         kode = kode / 2;
