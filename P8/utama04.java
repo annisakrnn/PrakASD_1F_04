@@ -11,7 +11,8 @@ public class utama04 {
             System.out.println("1. Tambah barang");
             System.out.println("2. Ambil barang");
             System.out.println("3. Tampilkan tumpukan barang");
-            System.out.println("4. Keluar");
+            System.out.println("4. Tampilkan lihat barang");
+            System.out.println("5. Keluar");
             System.out.print("Pilih operasi: ");
             int pilihan = sc.nextInt();
             sc.nextLine(); 
@@ -35,7 +36,10 @@ public class utama04 {
                     gudang.tampilkanBarang();
                     break;
                 case 4:
+                    gudang.lihatBarangTeratas();
                     break;
+                case 5:
+                break;
                 default:
                     System.out.println("Pilihan tidak valid. Silahkan coba lagi.");
             }
