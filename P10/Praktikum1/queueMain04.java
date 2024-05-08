@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class queueMain04 {
 
     public static void menu() {
