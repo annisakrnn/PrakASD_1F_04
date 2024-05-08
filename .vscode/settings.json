@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "P8",
         "P7/TestSeearching",
         "P7/MergeSorting",
         "P6/LatihanPraktikum",
@@ -12,7 +13,7 @@
         "P2",
         "P1",
         "Kuis1_1F_04",
-        "P8"
+        "UTS_04_1F_Annisa Kurniawati"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
