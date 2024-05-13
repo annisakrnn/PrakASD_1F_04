@@ -42,7 +42,14 @@ public class Nasabah04 {
             System.out.println("Queue masih kosong");
         }
     }
-
+    public void peekRear(){
+        if (!IsEmpty()){
+            System.out.println("Elemen terbelakang: " + data[rear].norek + " " + data[rear].nama
+                + " " + data[rear].umur + " " + data[rear].saldo);
+        } else {
+            System.out.println("Queue masih kosong");
+        }
+    }
     public void print(){
         if (IsEmpty()){
             System.out.println("Queue masih kosong");
