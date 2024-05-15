@@ -88,7 +88,6 @@ public class SingleLinkedList04 {
         }
         return tmp.data;
     }
-
     int indexOf(int key) {
         Node04 tmp = head;
         int index = 0;
