@@ -12,12 +12,13 @@
         "P5/Faktorial",
         "P3",
         "P2",
+        "P11/SingleLinkedList",
         "P10/Tugas",
         "P10/Praktikum1",
         "P10/Prakrtikum2",
         "P1",
         "Kuis1_1F_04",
-        "P11/SingleLinkedList"
+        "P11/Tugas_P11/mahasiswa"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
