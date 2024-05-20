@@ -20,6 +20,8 @@ public class DoubleLinkedListMain {
         dll.clear();
         dll.print();
         System.out.println("Size : "+dll.size());
+
+        //praktikum 2
         dll.addLast(50);
         dll.addLast(40);
         dll.addLast(10);
