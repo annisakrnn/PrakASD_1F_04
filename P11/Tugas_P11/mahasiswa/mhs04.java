@@ -1,10 +1,8 @@
 public class mhs04 {
     mahasiswa04 head, tail;
-
     boolean isEmpty() {
         return head == null;
     }
-
     void print() {
         if (!isEmpty()) {
             mahasiswa04 temp = head;
@@ -19,7 +17,6 @@ public class mhs04 {
             System.out.println("Linked List Kosong");
         }
     }
-
     void addFirst(String nama, int nim) {
         mahasiswa04 newNode = new mahasiswa04(nama, nim);
         if (isEmpty()) {
@@ -29,7 +26,6 @@ public class mhs04 {
             head = newNode;
         }
     }
-
     void addLast(String nama, int nim) {
         mahasiswa04 newNode = new mahasiswa04(nama, nim);
         if (isEmpty()) {
@@ -39,7 +35,6 @@ public class mhs04 {
             tail = newNode;
         }
     }
-
     void insertAfter(String key, String nama, int nim) {
         mahasiswa04 newNode = new mahasiswa04(nama, nim);
         mahasiswa04 temp = head;
@@ -55,7 +50,6 @@ public class mhs04 {
             temp = temp.next;
         }
     }
-
     void insertAt(int index, String nama, int nim) {
         if (index < 0) {
             System.out.println("Perbaiki logikanya! Kalau indeksnya -1 bagaimana?");

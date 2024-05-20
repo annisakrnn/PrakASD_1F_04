@@ -1,5 +1,4 @@
 public class kemhas04 {
-
     kemahasiswaan04 head, tail;
     boolean isEmpty() {
         return head == null;

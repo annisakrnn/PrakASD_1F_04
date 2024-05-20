@@ -4,7 +4,6 @@ public class SingleLinkedList04 {
     boolean isEmpty() {
         return head == null;
     }
-
     void print() {
         if (!isEmpty()) {
             Node04 tmp = head;
@@ -18,7 +17,6 @@ public class SingleLinkedList04 {
             System.out.println("Linked List Kosong");
         }
     }
-
     void addFirst(int input) {
         Node04 ndInput = new Node04(input, null);
         if (isEmpty()) {
@@ -29,7 +27,6 @@ public class SingleLinkedList04 {
             head = ndInput;
         }
     }
-
     void addLast(int input) {
         Node04 ndInput = new Node04(input, null);
         if (isEmpty()) {
@@ -40,7 +37,6 @@ public class SingleLinkedList04 {
             tail = ndInput;
         }
     }
-
     void insertAfter(int key, int input) {
         Node04 ndInput = new Node04(input, null);
         Node04 temp = head;
@@ -56,7 +52,6 @@ public class SingleLinkedList04 {
             temp = temp.next;
         }while (temp != null);
     }
-
     void insertAt(int index, int input) {
         Node04 ndInput = new Node04(input, null);
         if (index < 0) {
@@ -72,7 +67,6 @@ public class SingleLinkedList04 {
                     System.out.println("Indeks tidak valid!");
                     return;
                 }
-            
             ndInput.next = temp.next;
             temp.next = ndInput;
             if (ndInput.next == null) {
@@ -80,7 +74,6 @@ public class SingleLinkedList04 {
             }
         }
     }
-
     int getData(int index) {
         Node04 tmp = head;
         for (int i = 0; i < index; i++) {
@@ -101,7 +94,6 @@ public class SingleLinkedList04 {
             return -1;
         }
     }
-
     void removeFirst() {
         if (isEmpty()) {
             System.out.println("Linked list masih kosong, tidak dapat dihapus");
@@ -111,7 +103,6 @@ public class SingleLinkedList04 {
             head = head.next;
         }
     }
-
     void removeLast() {
         if (isEmpty()) {
             System.out.println("Linked list masih kosong, tidak dapat dihapus");
@@ -126,7 +117,6 @@ public class SingleLinkedList04 {
         tail = temp;
         }
     }
-
     void remove(int key) {
         if (isEmpty()) {
             System.out.println("Linked list masih kosong, tidak dapat dihapus");
@@ -145,7 +135,6 @@ public class SingleLinkedList04 {
         }
     }
 }
-
     public void removeAt(int index) {
         if (index == 0) {
             removeFirst();
