@@ -3,19 +3,21 @@ public class kemhasMain {
         kemhas04 mhs = new kemhas04();
 
         mhs.addFirst("Anton", 111);
-        mhs.print();
         mhs.addLast("Prita", 112);
-        mhs.print();
         mhs.addLast("Yusuf", 113);
-        mhs.print();
         mhs.addLast("Doni", 114);
-        mhs.print();
         mhs.addLast("Sari", 115);
-        mhs.print();
 
         System.out.println("Antrian layanan unit kemahasiswaan:");
         mhs.print();
 
-        
+        System.out.println("\nMahasiswa yang telah dilayani:");
+        kemahasiswaan04 temp = mhs.removeFirst();
+        if (temp != null) {
+            System.out.println("NIM: " + temp.nim + ", Nama: " + temp.nama);
+        }
+
+        System.out.println("\nAntrian setelah satu mahasiswa dilayani:");
+        mhs.print();
     }
 }

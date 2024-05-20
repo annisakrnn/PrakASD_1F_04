@@ -1,17 +1,15 @@
 public class kemhas04 {
 
     kemahasiswaan04 head, tail;
-
     boolean isEmpty() {
         return head == null;
     }
-
     void print() {
         if (!isEmpty()) {
             kemahasiswaan04 temp = head;
             System.out.println("Isi Linked List:");
             while (temp != null) {
-                System.out.println("Nama: " + temp.nama
+                System.out.println("Nama: " + temp.nama 
                                 + ", NIM: " + temp.nim + "\t");
                 temp = temp.next;
             }
@@ -20,7 +18,6 @@ public class kemhas04 {
             System.out.println("Linked List Kosong");
         }
     }
-
     void addFirst(String nama, int nim) {
         kemahasiswaan04 newNode = new kemahasiswaan04(nama, nim);
         if (isEmpty()) {
@@ -30,7 +27,6 @@ public class kemhas04 {
             head = newNode;
         }
     }
-
     void addLast(String nama, int nim) {
         kemahasiswaan04 newNode = new kemahasiswaan04(nama, nim);
         if (isEmpty()) {
@@ -40,7 +36,6 @@ public class kemhas04 {
             tail = newNode;
         }
     }
-
     void insertAfter(String key, String nama, int nim) {
         kemahasiswaan04 newNode = new kemahasiswaan04(nama, nim);
         kemahasiswaan04 temp = head;
@@ -56,7 +51,6 @@ public class kemhas04 {
             temp = temp.next;
         }
     }
-
     void insertAt(int index, String nama, int nim) {
         if (index < 0) {
             System.out.println("Indeks tidak valid! Indeks harus >= 0.");
@@ -73,7 +67,7 @@ public class kemhas04 {
                     return;
                 }
             }
-            if (temp == null || temp.next == null && index > 1) {
+            if (temp == null || (temp.next == null && index > 1)) {
                 System.out.println("Indeks tidak valid!");
                 return;
             }
@@ -84,5 +78,39 @@ public class kemhas04 {
             }
         }
     }
+    String getData(int index) {
+        if (isEmpty()) {
+            System.out.println("Linked list kosong");
+            return null;
+        }
+        kemahasiswaan04 temp = head;
+        for (int i = 0; i < index; i++) {
+            if (temp != null) {
+                temp = temp.next;
+            } else {
+                System.out.println("Indeks tidak valid!");
+                return null;
+            }
+        }
+        if (temp != null) {
+            return temp.nama;
+        } else {
+            System.out.println("Indeks tidak valid!");
+            return null;
+        }
+    }
+    kemahasiswaan04 removeFirst() {
+        if (isEmpty()) {
+            System.out.println("Linked list masih kosong, tidak dapat dihapus");
+            return null;
+        } else if (head == tail) {
+            kemahasiswaan04 temp = head;
+            head = tail = null;
+            return temp;
+        } else {
+            kemahasiswaan04 temp = head;
+            head = head.next;
+            return temp;
+        }
+    }
 }
-    
