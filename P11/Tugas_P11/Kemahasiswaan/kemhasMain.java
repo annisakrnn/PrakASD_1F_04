@@ -1,8 +1,7 @@
-public class mahasiswamain {
+public class kemhasMain {
     public static void main(String[] args) {
-        mhs04 mhs = new mhs04();
-        
-        mhs.print();
+        kemhas04 mhs = new kemhas04();
+
         mhs.addFirst("Anton", 111);
         mhs.print();
         mhs.addLast("Prita", 112);
@@ -13,7 +12,10 @@ public class mahasiswamain {
         mhs.print();
         mhs.addLast("Sari", 115);
         mhs.print();
-        
+
+        System.out.println("Antrian layanan unit kemahasiswaan:");
+        mhs.print();
+
         
     }
 }

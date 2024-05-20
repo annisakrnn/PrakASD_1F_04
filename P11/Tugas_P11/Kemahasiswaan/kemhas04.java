@@ -1,5 +1,6 @@
-public class mhs04 {
-    mahasiswa04 head, tail;
+public class kemhas04 {
+
+    kemahasiswaan04 head, tail;
 
     boolean isEmpty() {
         return head == null;
@@ -7,11 +8,11 @@ public class mhs04 {
 
     void print() {
         if (!isEmpty()) {
-            mahasiswa04 temp = head;
+            kemahasiswaan04 temp = head;
             System.out.println("Isi Linked List:");
             while (temp != null) {
-                System.out.println("Nama: " + temp.nama 
-                                +  ", NIM: " + temp.nim + "\t");
+                System.out.println("Nama: " + temp.nama
+                                + ", NIM: " + temp.nim + "\t");
                 temp = temp.next;
             }
             System.out.println("");
@@ -21,7 +22,7 @@ public class mhs04 {
     }
 
     void addFirst(String nama, int nim) {
-        mahasiswa04 newNode = new mahasiswa04(nama, nim);
+        kemahasiswaan04 newNode = new kemahasiswaan04(nama, nim);
         if (isEmpty()) {
             head = tail = newNode;
         } else {
@@ -31,7 +32,7 @@ public class mhs04 {
     }
 
     void addLast(String nama, int nim) {
-        mahasiswa04 newNode = new mahasiswa04(nama, nim);
+        kemahasiswaan04 newNode = new kemahasiswaan04(nama, nim);
         if (isEmpty()) {
             head = tail = newNode;
         } else {
@@ -41,8 +42,8 @@ public class mhs04 {
     }
 
     void insertAfter(String key, String nama, int nim) {
-        mahasiswa04 newNode = new mahasiswa04(nama, nim);
-        mahasiswa04 temp = head;
+        kemahasiswaan04 newNode = new kemahasiswaan04(nama, nim);
+        kemahasiswaan04 temp = head;
         while (temp != null) {
             if (temp.nama.equals(key)) {
                 newNode.next = temp.next;
@@ -58,12 +59,12 @@ public class mhs04 {
 
     void insertAt(int index, String nama, int nim) {
         if (index < 0) {
-            System.out.println("Perbaiki logikanya! Kalau indeksnya -1 bagaimana?");
+            System.out.println("Indeks tidak valid! Indeks harus >= 0.");
         } else if (index == 0) {
             addFirst(nama, nim);
         } else {
-            mahasiswa04 newNode = new mahasiswa04(nama, nim);
-            mahasiswa04 temp = head;
+            kemahasiswaan04 newNode = new kemahasiswaan04(nama, nim);
+            kemahasiswaan04 temp = head;
             for (int i = 0; i < index - 1; i++) {
                 if (temp != null) {
                     temp = temp.next;
@@ -72,7 +73,7 @@ public class mhs04 {
                     return;
                 }
             }
-            if (temp == null) {
+            if (temp == null || temp.next == null && index > 1) {
                 System.out.println("Indeks tidak valid!");
                 return;
             }
@@ -84,3 +85,4 @@ public class mhs04 {
         }
     }
 }
+    
