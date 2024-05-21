@@ -18,7 +18,7 @@ public class vaksinasiMain {
         do {
             menu();
             pilih = sc.nextInt();
-            sc.nextLine(); // consume the newline
+            sc.nextLine(); 
 
             switch (pilih) {
                 case 1:
