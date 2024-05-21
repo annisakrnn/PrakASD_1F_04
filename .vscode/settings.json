@@ -13,6 +13,7 @@
         "P3",
         "P2",
         "P12/doublelinkedlist",
+        "P12/TugasPraktikum/Pertanyaan1",
         "P11/Tugas_P11/mahasiswa",
         "P11/Tugas_P11/Kemahasiswaan",
         "P11/SingleLinkedList",
@@ -21,7 +22,7 @@
         "P10/Prakrtikum2",
         "P1",
         "Kuis1_1F_04",
-        "P12/TugasPraktikum/Pertanyaan1"
+        "P12/TugasPraktikum/Pertanyaan2"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
