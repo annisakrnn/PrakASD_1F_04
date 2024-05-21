@@ -56,11 +56,11 @@ public class vaksin04 {
         System.out.println("+++++++++++++++++++++++++");
         System.out.println(" DAFTAR PENGANTRI VAKSIN ");
         System.out.println("+++++++++++++++++++++++++"); 
-        System.out.println("| No\t| Nama\t|");
+        System.out.println("| No\t| Nama"+"\t|");
         if(!IsEmpty()){
             vaksinasi04 tmp = head;
             while (tmp != null){
-                System.out.print("| "+tmp.nomor+"\t| "+tmp.nama+" "+"\t|");
+                System.out.print("| "+tmp.nomor+"\t| "+tmp.nama+" "+"\t|\n");
                 tmp = tmp.next;
             }
             System.out.println("\nSisa Antrian "+size);
