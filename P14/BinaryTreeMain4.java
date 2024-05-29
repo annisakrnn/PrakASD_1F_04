@@ -10,6 +10,12 @@ public class BinaryTreeMain4 {
             bt.addnodeR(9);
             bt.addnodeR(10);
             bt.addnodeR(15);
+            System.out.print("Data Terbesar :");
+            bt.maksimal();
+            System.out.println("");
+            System.out.print("Data terkecil :");
+            bt.minimal();
+            System.out.println("");
             System.out.print("PreOrder Traversal :");
             bt.traversePreOrder(bt.root);
             System.out.println("");

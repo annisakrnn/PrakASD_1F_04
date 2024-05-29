@@ -63,6 +63,20 @@ public class BinaryTree4 {
         }
         return current;
     }
+void maksimal(){
+    node4 current = root;
+    while (current.right != null) {
+        current = current.right;
+    }
+    System.out.println(current.data);
+}
+void minimal(){
+    node4 current = root;
+    while (current.left != null) {
+        current = current.left;
+    }
+    System.out.println(current.data);
+}
     void traversePreOrder(node4 node) {
         if (node != null) {
             System.out.print("" + node.data);
