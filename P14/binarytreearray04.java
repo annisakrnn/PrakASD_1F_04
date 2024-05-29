@@ -1,8 +1,8 @@
-public class binarytree04 {
+public class binarytreearray04 {
     int[] data;
     int idxLast;
 
-    public binarytree04(){
+    public binarytreearray04(){
         data = new int[10];
     }
     void populateData(int data[], int idxLast){
