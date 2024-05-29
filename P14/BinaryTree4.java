@@ -47,7 +47,22 @@ public class BinaryTree4 {
         }
         return false;
     }
-
+    void addnodeR(int data){
+        root = addnodeR(root, data);
+    }
+    public node4 addnodeR(node4 current, int data){
+        if (current == null) {
+            return new node4(data);
+        }
+        if (data<current.data) {
+            current.left = addnodeR(current.left, data);
+        }else if (data>current.data) {
+            current.right = addnodeR(current.right, data);
+        }else{
+            return current;
+        }
+        return current;
+    }
     void traversePreOrder(node4 node) {
         if (node != null) {
             System.out.print("" + node.data);
