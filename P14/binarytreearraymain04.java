@@ -7,5 +7,11 @@ public class binarytreearraymain04 {
         System.out.print("\nInOrder travesal : ");
         bta.traverseInOrder(0);
         System.out.println("\n");
+        System.out.print("\nPreeOrder travesal : ");
+        bta.traversePreOrder(0);
+        System.out.println("\n");
+        System.out.print("\nPostOrder travesal : ");
+        bta.traversePostOrder(0);
+        System.out.println("\n");
     }
 }
