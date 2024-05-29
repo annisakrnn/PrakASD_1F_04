@@ -16,6 +16,9 @@ public class BinaryTreeMain4 {
             System.out.print("Data terkecil :");
             bt.minimal();
             System.out.println("");
+            System.out.print("Data yang ada di leaf : ");
+            bt.leaf(bt.root);
+            System.out.println("");
             System.out.print("PreOrder Traversal :");
             bt.traversePreOrder(bt.root);
             System.out.println("");

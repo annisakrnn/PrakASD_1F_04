@@ -77,6 +77,19 @@ void minimal(){
     }
     System.out.println(current.data);
 }
+void leaf(node4 root){
+    if (root == null) {
+        return;
+    }
+    if (root.left == null && root.right == null) {
+        System.out.print(" "+ root.data);
+        return;
+    }if (root.left !=null) {
+        leaf(root.left);
+    }if (root.right != null) {
+        leaf(root.right);
+    }
+}
     void traversePreOrder(node4 node) {
         if (node != null) {
             System.out.print("" + node.data);
