@@ -90,6 +90,16 @@ void leaf(node4 root){
         leaf(root.right);
     }
 }
+int jumlahleaf(node4 root){
+    if(root == null){
+        return 0;
+    }
+    if(root.left == null && root.right == null){
+        return 1;
+    }
+    return jumlahleaf(root.left)+jumlahleaf(root.right);
+    }
+
     void traversePreOrder(node4 node) {
         if (node != null) {
             System.out.print("" + node.data);

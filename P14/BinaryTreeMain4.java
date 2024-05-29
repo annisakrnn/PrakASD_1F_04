@@ -19,6 +19,9 @@ public class BinaryTreeMain4 {
             System.out.print("Data yang ada di leaf : ");
             bt.leaf(bt.root);
             System.out.println("");
+            System.out.print("Jumlah Leaf: ");
+            int jumlahLeaf = bt.jumlahleaf(bt.root);
+            System.out.println(jumlahLeaf);
             System.out.print("PreOrder Traversal :");
             bt.traversePreOrder(bt.root);
             System.out.println("");
