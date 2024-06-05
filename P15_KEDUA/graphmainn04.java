@@ -10,7 +10,7 @@ public class graphmainn04 {
             gedung.addEdge(2, 3, 40);
             gedung.addEdge(3, 4, 60);
             gedung.addEdge(4, 5, 80);
-            gedung.degree(0);
+            gedung.removeEdge(1, 3);
             gedung.printGraph();
             
         }

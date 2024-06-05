@@ -59,7 +59,8 @@ public class doublelinklistt04 {
                     if (current.next != null) {
                         current.next.prev = current.prev;
                     }
-                    break;
+                    size--;
+                    return;
                 }
                 current = current.next;
             }
