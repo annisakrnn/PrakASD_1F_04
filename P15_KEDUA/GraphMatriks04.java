@@ -2,25 +2,52 @@ public class GraphMatriks04 {
     int vertex;
     int[][] matriks;
 
-    public GraphMatriks04(int v){
+    public GraphMatriks04(int v) {
         vertex = v;
         matriks = new int[v][v];
+        for (int i = 0; i < v; i++) {
+            for (int j = 0; j < v; j++) {
+                matriks[i][j] = -1; 
+            }
+        }
     }
-    public void makeEdge(int asal, int tujuan, int jarak){
-        matriks[asal][tujuan]= jarak;
+
+    public void makeEdge(int asal, int tujuan, int jarak) {
+        matriks[asal][tujuan] = jarak;
     }
-    public void removeEdge(int asal, int tujuan){
+
+    public void removeEdge(int asal, int tujuan) {
         matriks[asal][tujuan] = -1;
     }
-    public void printGraph(){
-        for(int i = 0; i < vertex; i++){
-            System.out.print("Gedung" + (char) ('A' + i) + ":");
-            for(int j = 0; j < vertex; j++){
+
+    public void degree(int asal) {
+        int totalIn = 0, totalOut = 0;
+        for (int i = 0; i < vertex; i++) {
+            if (matriks[i][asal] != 0) {
+                totalIn++;
+            }
+            if (matriks[asal][i] != 0) {
+                totalOut++;
+            }
+        }
+        System.out.println("Indegree dari Gedung " + (char) ('A' + asal) + " : " + totalIn);
+        System.out.println("Outdegree dari Gedung " + (char) ('A' + asal) + " : " + totalOut);
+        System.out.println("Degree dari Gedung " + (char) ('A' + asal) + " : " + (totalIn + totalOut));
+    }
+
+    public void printGraph() {
+        for (int i = 0; i < vertex; i++) {
+            System.out.print("Gedung " + (char) ('A' + i) + " terhubung dengan: ");
+            for (int j = 0; j < vertex; j++) {
                 if (matriks[i][j] != -1) {
-                    System.out.print("Gedung" + (char) ('A' + j) + "(" + matriks[i][j] + "m),");
+                    System.out.print("Gedung " + (char) ('A' + j) + " (" + matriks[i][j] + "m), ");
                 }
             }
             System.out.println();
         }
+    }
+
+    public boolean cek(int asal, int tujuan) {
+        return matriks[asal][tujuan] != -1;
     }
 }

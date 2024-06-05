@@ -19,9 +19,14 @@ public class graphmainn04 {
             gedung.makeEdge(2, 3, 40);
             gedung.makeEdge(3, 0, 90);
             gedung.printGraph();
-            System.out.println("Hasil setelah pengahpusan edge");
-            gedung.removeEdge(2, 1);
-            gedung.printGraph();
+            System.out.print("Jumlah Degree setiap gedung adalah: ");
+            for (int i = 0; i < gedung.vertex; i++) {
+            gedung.degree(i);
+            }
+            //gedung.printGraph();
+            //System.out.println("Hasil setelah pengahpusan edge");
+            //gedung.removeEdge(2, 1);
+            //gedung.printGraph();
 
         
         
@@ -42,5 +47,4 @@ public class graphmainn04 {
             
         }
     }
-
 
