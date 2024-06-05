@@ -12,6 +12,7 @@
         "P5/Faktorial",
         "P3",
         "P2",
+        "P14",
         "P12/doublelinkedlist",
         "P12/TugasPraktikum/Pertanyaan2",
         "P12/TugasPraktikum/Pertanyaan1",
@@ -24,7 +25,8 @@
         "P1",
         "Kuis2_04_1F_Annisa",
         "Kuis1_1F_04",
-        "P14"
+        "P15",
+        "P15_KEDUA"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
