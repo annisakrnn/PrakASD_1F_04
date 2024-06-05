@@ -64,5 +64,14 @@ public class graph04 {
             }
             System.out.println();
         }
+        public boolean cek(int asal, int tujuan)  throws Exception{
+            for(int i = 0; i < list[asal].size(); i++){
+                if (list[asal].get(i) == tujuan) {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
+    
 
