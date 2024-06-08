@@ -83,4 +83,11 @@ public class graph04 {
         }
         System.out.println("Edge dari Gedung " + (char) ('A' + asal) + " ke Gedung " + (char) ('A' + tujuan) + " tidak ditemukan");
     }
+    public int hitungEdge() {
+        int count = 0;
+        for (int i = 0; i < vertex; i++) {
+            count += list[i].size();
+        }
+        return count;
+}
 }

@@ -5,7 +5,7 @@ public class graphmainn04 {
             System.out.println("+++++++++++++++++++++++++");
             System.out.println("  PILIHAN MENU  ");
             System.out.println("+++++++++++++++++++++++++");
-            System.out.println(" 1. Add Edge\n 2. Remove Edge\n 3. Degree\n 4. Print Graph\n 5. Cek Edge\n 6. Keluar\n");
+            System.out.println(" 1. Add Edge\n 2. Remove Edge\n 3. Degree\n 4. Print Graph\n 5. Cek Edge\n 6. Hitung edge\n 7. Keluar\n");
             System.out.println("-----------------------------------");
         }
         public static void main(String[] args) throws Exception {
@@ -62,6 +62,10 @@ public class graphmainn04 {
                         }
                         break;
                     case 6:
+                    gedung.printGraph();
+                    System.out.println("Total edges in the graph: " + gedung.hitungEdge());
+                    break;
+                    case 7:
                         System.out.println("Keluar dari program...");
                         sc.close();
                         return;
