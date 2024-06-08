@@ -1,3 +1,5 @@
+import org.w3c.dom.Node;
+
 public class doublelinklistt04 {
 
         public nodee04 head;
@@ -47,6 +49,16 @@ public class doublelinklistt04 {
             }
             return tmp.jarak;
         }
+         public void setJarak(int index, int jarak) throws Exception {
+        if (index >= size || index < 0) {
+            throw new Exception("Index out of bounds");
+        }
+        nodee04 current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        current.jarak = jarak;
+    }
         public void remove(int index){
             nodee04 current = head;
             while (current != null) {
